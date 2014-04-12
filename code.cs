@@ -1,7 +1,3 @@
-
-Lesson 01: HelloWorld
----------------------------------------------------------
-
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -20,6 +16,3 @@ namespace ConsoleApplication1
         }
     }
 }
-
-
-----------------------------------------------------------
