@@ -58,3 +58,43 @@ namespace ConsoleReadAndWrite
         }
     }
 }
+
+-----------------------------------------------------------------------
+lesson 03: Condition Code
+------------------------------------------------------------------------
+
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace conditional_code
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("please introduce yourself: ");
+            string interviewer01 = Console.ReadLine();
+
+            Console.WriteLine("nice to meet you {0}", interviewer01);
+
+            if (interviewer01 == "mehdi")
+            {
+                Console.WriteLine("you have to be our new Environment Artist");
+            }
+            else if (interviewer01 == "mohammad")
+            {
+                Console.WriteLine("you have to be our new programmer");
+
+            }
+            else
+                Console.WriteLine("get out");
+
+            Console.ReadLine();
+
+
+        }
+    }
+}
