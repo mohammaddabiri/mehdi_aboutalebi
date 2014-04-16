@@ -98,3 +98,43 @@ namespace conditional_code
         }
     }
 }
+-------------------------------------------------------------------------------------
+lesson 04: Switch-case
+-----------------------------------------------------------------------------------------
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Condition_switch
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("Please tell me your name: ");
+            string Artist = Console.ReadLine();
+
+            switch (Artist)
+            {
+                case ("mehdi"):
+                    Console.WriteLine("Hello mehdi, nice to meet you");
+                    break;
+
+                case ("mohammad"):
+                    Console.WriteLine("Hello mohammad, nice to meet you");
+                    break;
+
+                default:
+
+                    Console.WriteLine("get out");
+                    break;
+            }
+               
+            Console.ReadLine();
+
+            
+        }
+    }
+}
