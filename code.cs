@@ -138,3 +138,67 @@ namespace Condition_switch
         }
     }
 }
+
+---------------------------------------------------------------------------------------
+lesson 05   : constant and enum 
+-------------------------------------------------------------------------------------------
+
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Constant_enum
+{
+    class Program
+    {
+        enum Metal
+        {
+            Gold = 2000,
+            Silver= 3000,
+            Uranium = 5000,
+        }
+
+        static void Main(string[] args)
+        {
+            /* const int gold = 2000;
+            const int uranium = 5000;
+
+            string metalname = "nothing" ;
+            int metalprice = 6000;           
+
+            Console.WriteLine("Please enter your metal name = ");
+            metalname = Console.ReadLine();
+
+            Console.WriteLine("your metal price is {0}" , metalprice );
+
+            if ((metalprice < gold) && (metalprice < uranium))
+            {
+                Console.WriteLine("your metal is cheap");
+            }
+            else if ((metalprice > gold) && (metalprice < uranium))
+                Console.WriteLine("your metal is worth to buy");
+            else
+                Console.WriteLine("your metal is excellent");  */
+
+            Console.WriteLine("please enter your metal name = ");
+            string metalname = Console.ReadLine();
+            int metalprice = 3000;
+
+            Console.WriteLine("your metal price is {0}", metalprice);
+
+            if (( metalprice < (int)Metal.Gold) && (metalprice < (int)Metal.Uranium))
+                Console.WriteLine("your metal is cheap");
+
+            else if ((metalprice > (int)Metal.Gold) && (metalprice < (int)Metal.Uranium))
+                Console.WriteLine("your metal is worth to buy");
+            else
+                Console.WriteLine("your metal is EXELLENT to buy");
+
+            
+            Console.ReadLine();
+        }
+        
+    }
+}
