@@ -202,3 +202,110 @@ namespace Constant_enum
         
     }
 }
+
+----------------------------------------------------------------
+lesson 06: loops
+----------------------------------------------------------------
+
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Loops
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            /*****************************************************
+             int myVar = 0;
+
+            while (myVar <= 30)
+            {
+                Console.WriteLine("myVar is currently = {0} ", myVar );
+
+                myVar += 5;
+            }
+             **********************************************/
+
+            /*************************************************
+            int myVar = 1;
+            Console.WriteLine("myVar is currently = {0} ", myVar);
+
+            myVar -= 1;
+
+            do
+            {
+                myVar += 5;
+
+                Console.WriteLine("myVar is currently = {0} ", myVar);
+                                
+            } while (myVar <= 30);
+            ******************************************************/
+
+            for (int myVar = 1; myVar <= 60; myVar += 2)
+            {
+                if (myVar == 9)
+                    continue;
+
+                Console.WriteLine("the odd number is = {0}", myVar);
+
+                if (myVar == 31)
+                    break;
+
+            }
+              
+                Console.ReadLine();
+        }
+    }
+}
+
+----------------------------------------------------------------------------
+lesson 07: functions
+-------------------------------------------------------------------------------
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace functions
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            /*************************************
+            int myresult = mySqure(100);
+
+            Console.WriteLine("the number is ={0} ", myresult );
+            
+            Console.ReadLine();   
+        
+        }
+
+        static int mySqure(int myNumber)
+        {
+            return (myNumber * 5) + 15;
+        }
+              ***********************************/
+            float myNumber = 0.26F ;
+            int myRound = roundNumber(myNumber);
+
+            Console.WriteLine("the round part of {0} is = {1}", myNumber, myRound);
+            Console.ReadLine();
+        }
+
+        static int roundNumber(float Arg)
+        {
+            return (int)Arg; 
+        }
+
+
+
+    }
+
+}
+------------------------------------------------------------------------
