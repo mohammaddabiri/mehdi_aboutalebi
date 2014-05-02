@@ -309,3 +309,66 @@ namespace functions
 
 }
 ------------------------------------------------------------------------
+lesson 08: Class
+--------------------------------------------------------------------------
+
+wine Class:
+
+
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Classes
+{
+    class wine
+    {
+        private string wineName;
+        private string wineDate;
+        private decimal firstPrice = 50m;
+        private decimal Tax;
+
+        public decimal finalPrice
+        {
+            get { return firstPrice + Tax; }
+        }
+
+       public  wine(string A, string D, decimal T) 
+        {
+            wineName = A;
+            wineDate = D;
+            Tax = T;
+        }
+                
+    }
+}
+
+
+
+---------using wine class ------------------
+
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Classes
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            wine myWine = new wine("Champain", "93.02.05", 20m);
+
+            Console.WriteLine("this is the final price of your wine = {0}", myWine.finalPrice);
+
+            Console.ReadLine();
+
+        }
+    }
+}
+------------------------------------------------------------------------------------------------------
+
